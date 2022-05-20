@@ -11,6 +11,10 @@ type Square struct {
 
 func (square Square) End() Point {
 	var x, y int
+
+	x = square.start.x + int(square.a)
+	y = square.start.y + int(square.a)
+
 	// implement me
 
 	return Point{x, y}
