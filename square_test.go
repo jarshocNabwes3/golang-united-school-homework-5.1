@@ -24,3 +24,13 @@ func TestArea(t *testing.T) {
 		1, 2, 3, area, expected,
 	)
 }
+
+func TestPerimeter(t *testing.T) {
+	square := Square{Point{1, 2}, 3}
+	prmtr := square.Perimeter()
+	expected := uint(12)
+	assert.Equal(t, prmtr, expected,
+		`Perimeter() differs for 'Point{%v, %v}, %v': '%v' not '%v'`,
+		1, 2, 3, prmtr, expected,
+	)
+}
