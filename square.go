@@ -21,7 +21,7 @@ func (square Square) End() Point {
 }
 
 func (square Square) Area() uint {
-	var area uint
+	var area = square.a * square.a
 	// implement me
 
 	return area

@@ -18,8 +18,9 @@ func TestEnd(t *testing.T) {
 func TestArea(t *testing.T) {
 	square := Square{Point{1, 2}, 3}
 	area := square.Area()
-	assert.Equal(t, area, 9,
+	expected := uint(9)
+	assert.Equal(t, area, expected,
 		`Area() differs for 'Point{%v, %v}, %v': '%v' not '%v'`,
-		1, 2, 3, area, 9,
+		1, 2, 3, area, expected,
 	)
 }
